@@ -19,15 +19,15 @@ export default function Banner() {
                 "> Book Now </button>
                 </div>
                 <div className="lg:col-span-2 w-full h-full ">
-                    <Image src={headerimage} alt="header image "  
-                  className="lg:mt-8 mb-[-2.5em]" />
+                    <Image src={headerimage} alt="header image "
+                        className="lg:mt-8 mb-[-2.5em]" />
                 </div>
             </div>
 
-            <div className="lg:grid grid-cols-2 flex flex-col-reverse  bg-white lg:p-10 lg:py-20 lg:gap-16">
+            <div className="lg:grid grid-cols-2 flex flex-col-reverse  bg-white lg:p-10 lg:py-20 lg:gap-16 womenlaying">
                 <div >
-                    <Image src={womenlaying} alt="women laying" className="lg:w-[90%]  p-0 relative mt-[-5%] mb-5 lg:mb-0" 
-                     objectFit="cover" objectPosition="center"
+                    <Image src={womenlaying} alt="women laying" className="lg:w-[90%]  p-0 relative mt-[-5%] mb-5 lg:mb-0"
+                        objectFit="cover" objectPosition="center"
                     />
                     <Image src={flyimage} alt="fly image" className=" lg:block hidden relative left-[80%] bottom-[50%]" />
                 </div>
@@ -48,7 +48,7 @@ export default function Banner() {
                 </div>
             </div>
 
-            <div className="bg-[#fff5f5]">
+            <div className="bg-white servicesoverlay lg:py-20">
                 <h1 className="font-bold text-[#051145] text-[50px] leading-[50px] text-center mb-4">
                     Our Services
                 </h1>
@@ -74,7 +74,115 @@ export default function Banner() {
                         <div className="px-6 py-4">
                             <Image
                                 className="object-contain object-center  rounded-full w-auto h-24 mx-auto m-[16px]"
-                                src={imgicons} 
+                                src={imgicons}
+                                alt="Card Image" />
+                            <h1 className="text-gray-700 text-base mb-[20px] w-[90%] mx-auto text-center">
+                                card title
+                            </h1>
+
+                            <p className="text-gray-700 text-base mx-auto w-[90%]">
+                                Your card content goes here. Replace this text with your actual content.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="w-[353px] h-auto mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 py-4">
+
+                        <div className="px-6 py-4">
+                            <Image
+                                className="object-contain object-center  rounded-full w-auto h-24 mx-auto m-[16px]"
+                                src={imgicons} // Replace with your actual image URL
+                                alt="Card Image" />
+                            <h1 className="text-gray-700 text-base mb-[20px] w-[90%] mx-auto text-center">
+                                card title
+                            </h1>
+
+                            <p className="text-gray-700 text-base mx-auto w-[90%]">
+                                Your card content goes here. Replace this text with your actual content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                {/* 2nd services  */}
+                <div className="grid lg:grid-cols-3 gap-5 womenlaying mt-5">
+                    <div className="w-[353px] h-auto mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 py-4">
+
+                        <div className="px-6 py-4">
+                            <Image
+                                className="object-contain object-center  rounded-full w-auto h-24 mx-auto m-[16px]"
+                                src={imgicons} // Replace with your actual image URL
+                                alt="Card Image" />
+                            <h1 className="text-gray-700 text-base mb-[20px] w-[90%] mx-auto text-center">
+                                card title
+                            </h1>
+
+                            <p className="text-gray-700 text-base mx-auto w-[90%]">
+                                Your card content goes here. Replace this text with your actual content.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="w-[353px] h-auto mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 py-4">
+
+                        <div className="px-6 py-4">
+                            <Image
+                                className="object-contain object-center  rounded-full w-auto h-24 mx-auto m-[16px]"
+                                src={imgicons}
+                                alt="Card Image" />
+                            <h1 className="text-gray-700 text-base mb-[20px] w-[90%] mx-auto text-center">
+                                card title
+                            </h1>
+
+                            <p className="text-gray-700 text-base mx-auto w-[90%]">
+                                Your card content goes here. Replace this text with your actual content.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="w-[353px] h-auto mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 py-4">
+
+                        <div className="px-6 py-4">
+                            <Image
+                                className="object-contain object-center  rounded-full w-auto h-24 mx-auto m-[16px]"
+                                src={imgicons} // Replace with your actual image URL
+                                alt="Card Image" />
+                            <h1 className="text-gray-700 text-base mb-[20px] w-[90%] mx-auto text-center">
+                                card title
+                            </h1>
+
+                            <p className="text-gray-700 text-base mx-auto w-[90%]">
+                                Your card content goes here. Replace this text with your actual content.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* This Special Offer for You  */}
+            <div className="bg-white specialistoverlay lg:py-20">
+                <h1 className="font-bold text-[#051145] text-[50px] leading-[50px] text-center mb-4">
+                    Special Offer for You
+                </h1>
+                <div className="grid lg:grid-cols-3 gap-5">
+                    <div className="w-[353px] h-auto mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 py-4">
+
+                        <div className="px-6 py-4">
+                            <Image
+                                className="object-contain object-center  rounded-full w-auto h-24 mx-auto m-[16px]"
+                                src={imgicons} // Replace with your actual image URL
+                                alt="Card Image" />
+                            <h1 className="text-gray-700 text-base mb-[20px] w-[90%] mx-auto text-center">
+                                card title
+                            </h1>
+
+                            <p className="text-gray-700 text-base mx-auto w-[90%]">
+                                Your card content goes here. Replace this text with your actual content.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="w-[353px] h-auto mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 py-4">
+
+                        <div className="px-6 py-4">
+                            <Image
+                                className="object-contain object-center  rounded-full w-auto h-24 mx-auto m-[16px]"
+                                src={imgicons}
                                 alt="Card Image" />
                             <h1 className="text-gray-700 text-base mb-[20px] w-[90%] mx-auto text-center">
                                 card title

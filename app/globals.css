@@ -31,3 +31,25 @@ body {
     text-wrap: balance;
   }
 }
+.womenlaying{
+  /* import backgorund overlay from local and width 25% */
+  background-image: url("../public/images/rectangle-2.png");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: bottom left ;
+}
+.servicesoverlay{
+  /* import backgorund overlay from local and width 25% */
+  background-image: url("../public/images/rectangle-2.png");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: top right ;
+}
+.specialistoverlay{
+  /* import backgorund overlay from local and width 25% */
+  background-image: url("../public/images/rectangle-2.png");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: top left ;
+  margin-top: -5rem;
+}
