@@ -136,7 +136,7 @@ export default function Banner() {
                             </p>
                         </div>
                     </div>
-                    <div className="w-[353px] h-auto mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 py-4">
+                    <div className="w-[353px] h-auto mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1 py-4 ">
 
                         <div className="px-6 py-4">
                             <Image
@@ -156,7 +156,7 @@ export default function Banner() {
             </div>
 
             {/* This Special Offer for You  */}
-            <div className="bg-white specialistoverlay lg:py-20">
+            <div className="bg-white specialistoverlay lg:py-20 py-10">
                 <h1 className="font-bold text-[#051145] text-[50px] leading-[50px] text-center mb-4">
                     Special Offer for You
                 </h1>
