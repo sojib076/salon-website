@@ -64,4 +64,19 @@ body {
       margin-top: 0rem;
     }
   }
+
+.promobg{
+  /* import backgorund overlay from local and width 25% */
+  background-image: url("../public/images/bgspa-woman.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+  width: 100%;
+  height: 100%;
+ /* add a balck ovelay in iamges */
+
+
+}
+
+
   
