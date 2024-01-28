@@ -1,26 +1,51 @@
 export default function Faq() {
     return (
         <div className="lg:grid grid-cols-2 bg-white lg:py-20 justify-center ">
-            <div>
-                <div className="mx-14 lg:mt-10  rounded-lg">
-                    <div className="mt-10 text-center text-black  font-bold">Contact Us</div>
-                    <div className="mt-3 text-center text-4xl font-bold text-black">Make an Appointment</div>
-                    <div className="p-1">
-                        <div className=" grid grid-cols-1 lg:grid-cols-2 p-4">
-                            <input type="Name" name="name" className="lg:m-2  w-[95%] block lg:wrounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm" placeholder="Full Name *" />
-                            <input type="email" name="email" className="lg:m-2 my-2 block w-[95%] lg:wrounded-md border border-slate-300 bg-white px-3 py-4 placeholder-slate-400 shadow-sm placeholder:font-semibold placeholder:text-gray-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm" placeholder="Email *" />
-                        </div>
+            <div className=" mt-8 p-4  ">
+                <h2 className="text-2xl font-bold  text-[#051145]  text-center text-[35px] mb-4 lg:text-[72px] lg:leading-[72px]">Contact Form</h2>
 
-                        <div className="">
-                            <textarea name=" textarea" id="text" cols="200" rows="10" className=" w-full resize-none rounded-md border border-slate-300 p-5 font-semibold text-gray-300">Message</textarea>
-                        </div>
-                        <div className="text-center w-[100%]">
-                            <button className="bg-[#1C7261] text-white hover:bg-[#148A87]    
-                px-[30px] py-[15px]  leading-[16px] text-[16px] w-full
-                border-[1px] border-[#1C7261] rounded-[5px]"> Book Now </button>
-                        </div>
+                <form className="">
+              <div className="grid lg:grid-cols-2 gap-5"> 
+              <div className="mb-4">
+                        <label htmlFor="name" className="block text-sm font-semibold text-gray-600 mb-1">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-500"
+                        />
                     </div>
-                </div>
+
+                    <div className="mb-4">
+                        <label htmlFor="number" className="block text-sm font-semibold text-gray-600 mb-1">Number</label>
+                        <input
+                            type="tel"
+                            id="number"
+                            name="number"
+                            className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-500"
+                        />
+                    </div>
+              </div>
+
+                    <div className="mb-4">
+                        <label htmlFor="message" className="block text-sm font-semibold text-gray-600 mb-1">Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="4"
+                            className="w-full p-2 border rounded focus:outline-none focus:ring focus:border-blue-500"
+                        ></textarea>
+                    </div>
+
+                    <div className="text-center">
+                        <button
+                            type="submit"
+                            className="bg-[#1C7261] text-white w-full px-4 py-2 rounded hover:bg-[#148A87] focus:outline-none focus:ring focus:border-blue-300"
+                        >
+                            Submit
+                        </button>
+                    </div>
+                </form>
             </div>
             <div className="lg:p-10">
                 <ul className="max-w-2xl mx-auto lg:mt-20 divide-y  shadow  bg-[#F7F9FB]">

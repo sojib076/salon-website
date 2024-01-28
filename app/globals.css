@@ -80,8 +80,18 @@ body {
 /* styles/globals.css */
 /* ... existing imports ... */
 
+@keyframes slowFill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--progress);
+  }
+}
 
-
+.slow-fill-animation {
+  animation: slowFill 3s ease-in-out forwards; /* Adjust the duration as needed */
+}
 
 
 

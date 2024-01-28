@@ -4,6 +4,7 @@ import flyimage from "../../public/images/pattern_1-p57r4455lvw1r4plky21bs0glqts
 import progressimg from "../../public/images/beautiful-relaxed-woman-having-clay-mask-applying-to-the-back-in-spa-salon.jpg"
 
 import Image from "next/image";
+import Counter from "../components/partsHome/Counter";
 
 export default function About() {
   return (
@@ -48,7 +49,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="w-[90%] mx-auto">
+      <div className="w-[90%] mx-auto py-20">
         <div>
           <div className="lg:grid grid-cols-2    bg-white lg:p-10 lg:py-20 lg:gap-16 ">
 
@@ -69,14 +70,13 @@ export default function About() {
               <Bar skill="Massage therapy" progress="70" />
             </div>
             <div className="lg:block hidden">
-              <Image src={progressimg} alt="women laying" className="lg:w-[100%]  p-5 relative mt-[-5%] mb-5 lg:mb-0 "
-                objectFit="cover" objectPosition="center"
-              />
+              <Image src={progressimg} alt="women laying" className="lg:w-[100%]  p-5 relative mt-[-5%] mb-5 lg:mb-0"/>
               <Image src={flyimage} alt="fly image" className=" lg:block hidden relative left-[80%] bottom-[50%]" />
             </div>
           </div>
         </div>
       </div>
+      <Counter></Counter>
     </div>
 
   )

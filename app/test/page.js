@@ -38,8 +38,8 @@ const Test = () => {
                         alt="Floating Flower"
                         className="absolute animate-float lg:block hidden"
                         style={{
-                            transform: `translate(${mousePosition.x /20}px, ${mousePosition.y / 10}px)`,
-                            transition: 'transform 0.2s ease-in-out', // Adjust the duration for faster animation
+                            transform: `translate(${mousePosition.x /30}px, ${mousePosition.y / 30}px)`,
+                            transition: 'transform 0.2s ease-in-out', 
                             top: '80%',
                             left: '50%',
                         }}
@@ -52,7 +52,7 @@ const Test = () => {
                         alt="Floating Flower"
                         className="absolute animate-float "
                         style={{
-                            transform: `translate(${mousePosition.x /5}px, ${mousePosition.y / 5}px)`,
+                            transform: `translate(${mousePosition.x /10}px, ${mousePosition.y / 10}px)`,
                             transition: 'transform 0.2s ease-in-out' // Adjust the duration for faster animation
                             
                         }}

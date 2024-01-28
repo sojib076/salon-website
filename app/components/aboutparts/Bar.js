@@ -17,7 +17,7 @@ const Bar = ({ skill, progress }) => {
             style={{ '--progress': `${progress}%` }}
             className="shadow-none flex flex-col text-center whitespace-nowrap
              text-[#148A87]  justify-center
-              bg-[#148A87]  slow-fill-animation"
+              bg-[#148A87]  slow-fill-animation "
           ></div>
         </div>
       </div>

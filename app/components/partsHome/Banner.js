@@ -7,6 +7,7 @@ import landscapeimg from "../../../public/images/beautiful-relaxed-woman-having-
 import maskimg from "../../../public/images/diverse-masseuse-and-client.jpg"
 import Faq from "./Faq"
 import Test from "@/app/test/page"
+import Counter from "./Counter"
 
 
 export default function Banner() {
@@ -174,7 +175,7 @@ export default function Banner() {
                 </div>
             </div>
 
-            {/* This section will be testomonit */}
+            <Counter></Counter>
 
             {/* Why Choose Us */}
 
