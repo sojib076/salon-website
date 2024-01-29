@@ -15,15 +15,15 @@ const Test = () => {
 
     return (
         <div
-            className="flex lg:items-center lg:flex-row flex-col  relative bg-white"
+            className="flex items-center lg:flex-row flex-col  relative bg-[#ECF0F2]"
             onMouseMove={handleMouseMove} >
             <div className="lg:w-1/2 p-8">
        
-                <h1 className="text-[#051145] lg:text-[72px] text-[58px] font-[700] leading-[58px] lg:leading-[72px] text-left ">Home of<br />Beauty SPA,<br></br>& Care.</h1>
-                <p className="text-[16px] leading-[24px] font-normal text-[#051145] my-4 text-justify "> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                <h1 className="text-[#051145] lg:text-[72px] text-[50px] font-[700]  leading-[50px] lg:leading-[72px] text-center lg:text-left">Home of<br />Beauty SPA,<br></br>& Care.</h1>
+                <p className="text-[16px] leading-[24px] font-normal text-[#051145] my-4 text-center lg:text-left  "> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                 <button className="bg-[#1C7261] text-white hover:bg-[#148A87]    
                 px-[30px] py-[15px] lg:my-4 my-1 leading-[16px] text-[16px]
-                border-[1px] border-[#1C7261] rounded-[5px]"> Book Now </button>
+                border-[1px] border-[#1C7261] rounded-[5px]  lg:-ml-0 ml-[30%] "> Book Now </button>
                 
             </div>
             <div className="lg:w-1/2 relative overflow-hidden">
@@ -31,7 +31,10 @@ const Test = () => {
                 <Image
                     src={bannerimg}
                     alt="Right Side Image"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full "
+                    objectFit='cover'
+                    priority={true}
+                    objectPosition='center'
                 />
                      <Image
                         src={flowers}

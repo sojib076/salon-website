@@ -5,7 +5,7 @@ import Head from 'next/head';
 
 const CountdownItem = ({ name, count }) => (
   <div className="text-center ">
-    <h1 className="text-[72px] font-bold mb-2 text-[#051145]">{count} +</h1>
+    <h1 className="lg:text-[72px] font-bold mb-2 text-[#051145] text-[20px] ">{count} +</h1>
     <div className="text-black text-[16px] uppercase">{name}</div>
   </div>
 );
@@ -53,18 +53,17 @@ const Counter = () => {
   }, [countdown]);
 
   return (
-    <div className="container mx-auto p-10 servicesoverlay ">
-      <section className="text-center p-10">
+    <div className="container mx-auto lg:p-10 servicesoverlay p-5">
+      <section className="lg:text-center lg:p-10">
       <h2 className=" font-bold mb-4 text-[#148A87] text-[16px] leading-[10px]">Fun Fact</h2>
-        <h2 className=" font-bold mb-4 text-[#051145] text-[50px] leading-[50px]">Our SPA & Beauty by Number</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-5 ">
+        <h2 className=" font-bold mb-4 text-[#051145] lg:text-[50px] lg:leading-[50px] text-[22px]
+        ">Our SPA & Beauty by Number</h2>
+        <div className="grid grid-cols-2  md:grid-cols-2 lg:grid-cols-4 lg:gap-4 my-5 gap-2 ">
           {Object.entries(countdown).map(([name, count]) => (
             <CountdownItem key={name} name={name} count={count} />
           ))}
         </div>
       </section>
-
-      {/* Other sections go here */}
     </div>
   );
 };
