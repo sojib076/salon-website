@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-white">
       <body className={playfair.className}  >
-       
+       <Header></Header>
         {children}
         <Footer></Footer>
         </body>
