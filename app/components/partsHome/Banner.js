@@ -7,6 +7,7 @@ import maskimg from "../../../public/images/diverse-masseuse-and-client.jpg"
 import Faq from "./Faq"
 import Test from "@/app/test/page"
 import Counter from "./Counter"
+import FlipBox from "./FlipBox"
 
 
 export default function Banner() {
@@ -151,22 +152,15 @@ export default function Banner() {
                 </h1>
                 <div className="container mx-auto">
                     <div className="lg:grid grid-cols-2  gap-4 ">
-
-                        <div className="">
-                            <Image src={landscapeimg} alt="fly image"
-                                className="w-[100%] h-[100%]  lg:p-10"
-                            />
+                        <div className="w-[100%] h-[100%]  lg:p-10">
+                            <FlipBox imageSrc={landscapeimg} ></FlipBox>
                         </div>
-
                         <div className="grid  grid-rows-2 justify-between">
-                            <div className=" col-span-2">
-                                <Image src={maskimg} alt="fly image"
-                                    className="w-[100%] h-[100%] lg:p-10 " />
+                            <div className=" col-span-2 w-[100%] h-[100%] lg:p-10 ">
+                            <FlipBox imageSrc={maskimg} ></FlipBox>
                             </div>
-                            <div className=" mt-2 col-span-2" >
-                                <Image src={maskimg} alt="fly image"
-                                    className="w-[100%] h-[100%] lg:p-10"
-                                />
+                            <div className=" mt-2 col-span-2 w-[100%] h-[100%] lg:p-10 " >
+                            <FlipBox imageSrc={maskimg} ></FlipBox>
                             </div>
 
                         </div>
